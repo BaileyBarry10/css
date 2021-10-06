@@ -1,6 +1,39 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+	<link rel="stylesheet" href="ddfullscreenimageviewer.css" />
+<link rel="stylesheet" href="zoomio.css" />
+
+<style>
+
+/* demo class for thumbnail images on the page */
+.thumbnails{
+	max-width: 300px;
+	height: auto;
+	cursor: pointer;
+}
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="ddfullscreenimageviewer.js">
+/***********************************************
+* DD Full Screen Image Viewer By Dynamic Drive
+* Project Page: http://www.dynamicdrive.com/dynamicindex4/fullscreenviewer/
+***********************************************/
+</script>
+
+<script src="zoomio.js"></script>
+
+<script>
+
+jQuery(function(){ // on DOM Load
+$('img.thumbnails').fullscreenimage({
+ scale: 2 // magnify by 2 times when mouse moves over full screen image (set to 1 to disable)
+})
+
+</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
